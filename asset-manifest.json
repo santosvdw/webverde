@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/webverde/static/css/main.c81e38ef.css",
+    "main.js": "/webverde/static/js/main.1d6a9708.js",
+    "static/js/453.360bb57f.chunk.js": "/webverde/static/js/453.360bb57f.chunk.js",
+    "static/media/logo.png": "/webverde/static/media/logo.99ebfe72c8a05451fbc8.png",
+    "index.html": "/webverde/index.html",
+    "main.c81e38ef.css.map": "/webverde/static/css/main.c81e38ef.css.map",
+    "main.1d6a9708.js.map": "/webverde/static/js/main.1d6a9708.js.map",
+    "453.360bb57f.chunk.js.map": "/webverde/static/js/453.360bb57f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c81e38ef.css",
+    "static/js/main.1d6a9708.js"
+  ]
+}
