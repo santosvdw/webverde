@@ -1,0 +1,26 @@
+$primary: #419E4C;
+$primary-dark:#2F7437;
+$white: #E5FFE5;
+$black: #1B2021;
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    font-family:'Helvetica', Arial, sans-serif;
+    background-color: $white;
+    color: $black;
+}
+
+a, b {
+    color: $primary;
+}
+
+a:hover{
+  color: $primary-dark;
+}
