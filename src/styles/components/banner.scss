@@ -1,0 +1,38 @@
+@use "../variables" as *;
+
+.banner {
+  * {
+    border: 1px solid red;
+  }
+  display: flex;
+  min-width: 100vw;
+  overflow: hidden;
+  align-items: center;
+  flex-flow: row;
+  gap: 1rem;
+  background-color: $secondary;
+  color: $black;
+  padding: 1rem;
+  svg path {
+
+    fill: $black;
+  }
+
+  h5 {
+    margin: 0;
+    display: inline;
+    min-width: 80px;
+    padding: 0;
+    font-size: inherit; /* optioneel, als je dezelfde hoogte wilt houden */
+    font-weight: inherit;
+    text-align: center;
+  }
+
+  &.black {
+    color: $secondary;
+    background-color: $black;
+    svg path {
+      fill: $secondary;
+    }
+  }
+}
