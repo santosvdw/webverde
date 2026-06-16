@@ -1,7 +1,4 @@
-$primary: #419E4C;
-$primary-dark:#2F7437;
-$white: #E5FFE5;
-$black: #1B2021;
+@use './styles/variables' as *;
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -12,8 +9,11 @@ $black: #1B2021;
 
 body {
     margin: 0;
-    font-family:'Helvetica', Arial, sans-serif;
+    font-family:'Vina Sans', Arial, sans-serif;
     background-color: $white;
+}
+
+p, span, h1, h2, h3, h4, button {
     color: $black;
 }
 
