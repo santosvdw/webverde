@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.849ddc10.css",
+    "main.css": "/static/css/main.9b327be7.css",
     "main.js": "/static/js/main.811758f1.js",
     "static/media/almedina-img.png": "/static/media/almedina-img.4b78e64e7f633a2c3f9d.png",
     "static/media/os-img.png": "/static/media/os-img.2d6fb20df922f0ae0f72.png",
@@ -13,11 +13,11 @@
     "static/media/aandeslag.svg": "/static/media/aandeslag.7dabbd002795095cd3e0.svg",
     "static/media/overons.svg": "/static/media/overons.2989eb45235f4b9e05e8.svg",
     "static/media/title-cover.svg": "/static/media/title-cover.aa5cde76105ced2fdfe6.svg",
-    "main.849ddc10.css.map": "/static/css/main.849ddc10.css.map",
+    "main.9b327be7.css.map": "/static/css/main.9b327be7.css.map",
     "main.811758f1.js.map": "/static/js/main.811758f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.849ddc10.css",
+    "static/css/main.9b327be7.css",
     "static/js/main.811758f1.js"
   ]
 }
