@@ -1,0 +1,123 @@
+@use "./variables" as *;
+
+section.portfolio {
+  .portfolio-cards {
+    width: min(85vw, 1600px);
+    margin: 5vh auto 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 5rem;
+
+    .portfolio-card {
+      flex: 0 0 25%;
+      max-width: 650px;
+      min-width: 280px;
+
+      position: relative;
+
+      .card-info {
+        z-index: 2;
+        width: 70%;
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+
+        h3 {
+          // white-space: nowrap;
+        }
+
+        p {
+          font-size: $step--1;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+
+        p,
+        h3 {
+          height: fit-content;
+          position: relative;
+          width: fit-content;
+          &::before {
+            content: "";
+            width: 110%;
+            height: 110%;
+            transform: translateX(-5%) translateY(-5%);
+            position: absolute;
+            inset: 0;
+            background: #20c000;
+            z-index: -1;
+          }
+        }
+
+        img {
+          height: 3rem;
+          transform: translateY(5%);
+        }
+
+        .card-link {
+          transform: translateY(5px);
+          &:hover {
+            animation: tilt-bounce 300ms;
+          }
+
+          @keyframes tilt-bounce {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            49% {
+              transform: rotate(0deg);
+            }
+
+            50% {
+              transform: rotate(2deg);
+            }
+
+            49% {
+              transform: rotate(2deg);
+            }
+
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+        }
+
+        .card-title {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: flex-end;
+          gap: 10%;
+          transform: translateY(-25%);
+        }
+      }
+
+      .card-img {
+        position: relative;
+        width: 100%;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          position: relative;
+          z-index: 1;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+
+          background: url("../imgs/card-bg1.svg") center / 100% 100% no-repeat;
+
+          transform: scale(1.1);
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

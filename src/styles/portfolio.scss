@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+section.portfolio {
+  margin: 10vh 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10vh;
+
+  .portfolio-title {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    h2 {
+      line-height: 0.6;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background-image: url("../imgs/title-cover.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      transform: scale(2) translateY(5px);
+
+      z-index: -1;
+    }
+  }
+}

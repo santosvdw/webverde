@@ -14,7 +14,7 @@ export default function Header() {
         <img src={subtitle} alt="Creative web solutions" />
       </h1>
       <div className="header-buttons">
-        <a href="#eerder-werk">
+        <a href="#uitgelicht-werk">
           <button className="tilt-right">Eerder werk</button>
         </a>
         <a href="#over-ons">

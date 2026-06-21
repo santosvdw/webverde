@@ -1,0 +1,42 @@
+@use "./variables" as *;
+
+.over-ons {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10vh;
+
+  article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2vh;
+    width: clamp(300px, 50vw, 1400px);
+    text-align: center;
+  }
+
+  .over-ons-title {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+
+    h2 {
+      line-height: 0.6;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background-image: url("../imgs/overons.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      transform: scale(1.75) translateY(5px) translateX(3px);
+
+      z-index: -1;
+    }
+  }
+}

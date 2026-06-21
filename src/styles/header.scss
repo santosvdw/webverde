@@ -5,23 +5,25 @@ header {
     display: flex;
     align-items: center;
     flex-flow: column;
+    min-height: 80vh;
     .site-title img {
-        width: 40vw;
+        width: clamp(300px, 40vw, 1200px);
         height: auto;
         display: block;
     }
 
     .site-subtitle img {
-        width: 30vw;
+        width: clamp(300px, 30vw, 900px);
         height: auto;
         display: block;
     }
 
     .header-buttons {
-        padding: 5vh 0;
-        width: 40vw;
+        padding: 10vh 0;
+        width: clamp(250px, 80vw, 2200px);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 3vw;
     }
 
     #header-corner-decoration {
@@ -36,5 +38,13 @@ header {
         right: 0;
         top: 25%;
         z-index: 10;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    header .header-buttons {
+        flex-flow: column wrap;
+        gap: 2.5vh;
+        align-items: center;
     }
 }

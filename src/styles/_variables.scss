@@ -2,3 +2,11 @@ $primary: #1DB90C;
 $primary-dark:#2F7437;
 $white: #EBF3FF;
 $black: #322B2B;
+
+$step--1: clamp(0.875rem, 0.84rem + 0.18vw, 1rem);
+$step-0: clamp(1rem, 1.254rem + 0.32vw, 1.5rem);
+$step-1: clamp(1.25rem, 1.12rem + 0.64vw, 1.5rem);
+$step-2: clamp(1.563rem, 1.34rem + 1.11vw, 2rem);
+$step-3: clamp(1.53rem, 1.39rem + 1.60vw, 2.667rem);
+$step-4: clamp(3.5rem, 2.88rem + 2.81vw, 5.356rem);
+$step-5: clamp(3.052rem, 2.21rem + 4.21vw, 4.5rem);

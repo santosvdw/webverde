@@ -1,0 +1,92 @@
+@use "./variables" as *;
+
+footer {
+  width: 100%;
+
+  .footer-divider {
+    overflow-x: clip;
+    img {
+      height: min-content;
+
+      &#logo {
+        left: 20%;
+        // margin-bottom: -25%;
+        transform: translateY(50%) translateX(50%);
+        position: relative;
+        z-index: 5;
+        width: clamp(250px, 20vw, 2200px);
+      }
+      &#footer-divider {
+        width: 100%;
+        transform: translateY(5px);
+      }
+    }
+  }
+
+  .footer-content {
+    background-color: $primary;
+    padding: 10vh 5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    .links {
+      grid-column: span 1;
+    }
+
+    .contact {
+      grid-column: span 1;
+    }
+
+    .info {
+      grid-column: span 2;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        line-height: 1.6;
+      }
+    }
+
+    li a,
+    li {
+      color: $black;
+      font-size: $step-0;
+    }
+  }
+
+  .copyright {
+    padding: 0.5vh 5vw;
+    p {color: $primary;}
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    .footer-divider img#logo {
+      transform: translateY(50%) translateX(-25%);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    .info {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    .links,
+    .contact,
+    .info {
+      width: 80%;
+    }
+  }
+}

@@ -1,26 +1,79 @@
-@use './styles/variables' as *;
+@use "./styles/variables" as *;
 
-*, *::after, *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  scrollbar-color: $primary $black;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 body {
-    margin: 0;
-    font-family:'Vina Sans', Arial, sans-serif;
-    background-color: $white;
+  margin: 0;
+  font-family: "Akt", Helvetica, Arial, sans-serif;
+  background-color: $white;
 }
 
-p, span, h1, h2, h3, h4, button {
-    color: $black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Vina Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
 }
 
-a, b {
-    color: $primary;
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+button {
+  color: $black;
 }
 
-a:hover{
+a,
+b {
+  color: $primary;
+}
+
+a:hover {
   color: $primary-dark;
+}
+h1 {
+  font-size: $step-5;
+}
+
+h2 {
+  font-size: $step-4;
+}
+
+h3 {
+  font-size: $step-3;
+}
+
+h4 {
+  font-size: $step-2;
+}
+
+h5 {
+  font-size: $step-1;
+}
+
+h6 {
+  font-size: $step-0;
+}
+
+p {
+  font-size: $step-0;
+  line-height: 1.3;
 }
