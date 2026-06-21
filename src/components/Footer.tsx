@@ -22,7 +22,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="links">
-          <h2>Scrolling</h2>
+          <h2>Navigatie</h2>
           <ul>
             <li>
               <a href="#uitgelicht-werk">/eerder werk</a>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; web verde</p>
+        <p>&copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  &copy; web verde  </p>
       </div>
     </footer>
   );

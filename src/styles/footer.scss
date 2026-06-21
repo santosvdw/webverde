@@ -57,8 +57,15 @@ footer {
   }
 
   .copyright {
-    padding: 0.5vh 5vw;
-    p {color: $primary;}
+    padding: 0.5vh 0;
+    overflow: hidden;
+    white-space: nowrap;
+    p {
+      color: $primary;
+      width: 100vw;
+      position: relative;
+      left: -2vw;
+    }
   }
 }
 

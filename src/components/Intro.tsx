@@ -9,19 +9,15 @@ export default function Intro() {
       <img src={upperDivider} className="upper-divider" alt="" />
       <section className="introduction">
         <article>
-          <h3 className="white-underline">LOREM IPSUM</h3>
+          <h3 className="white-underline">Wat we doen</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-            aspernatur corrupti expedita reiciendis neque eos consectetur quae
-            sapiente, officia esse deleniti quia mollitia. Et, esse.
+            Creative web solutions. Oftewel, jij hebt een wens en wij doen het toverwerk. Je bestaande website op de schop gooien, een compleet nieuw ontwerp maken of gewoon regulier onderhoud, bij ons kan het allemaal.
           </p>
         </article>
         <article>
-          <h3 className="white-underline">LOREM IPSUM</h3>
+          <h3 className="white-underline">Voor wie doen we het</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-            aspernatur corrupti expedita reiciendis neque eos consectetur quae
-            sapiente, officia esse deleniti quia mollitia. Et, esse.
+            Jij bent anders. Jouw bedrijf is anders. Achter jouw bedrijf zit een idee dat een gewone website niet kan omvatten. Jij hebt maatwerk nodig: een website die gebouwd is om met jouw bedrijf mee te groeien in vibe en flow.
           </p>
         </article>
       </section>

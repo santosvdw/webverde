@@ -40,11 +40,11 @@
     display: flex;
     z-index: -1;
     justify-content: center;
-    gap: 5vw;
+    gap: 5rem;
     flex-flow: row wrap;
 
     article {
-      width: clamp(200px, 30vw, 800px);
+      width: clamp(250px, 35vw, 800px);
 
       h3 {
         position: relative;

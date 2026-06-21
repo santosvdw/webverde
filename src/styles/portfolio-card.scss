@@ -25,10 +25,6 @@ section.portfolio {
         left: 10%;
         bottom: 5%;
 
-        h3 {
-          // white-space: nowrap;
-        }
-
         p {
           font-size: $step--1;
           font-weight: 500;
@@ -118,6 +114,13 @@ section.portfolio {
           z-index: 0;
         }
       }
+      &:nth-of-type(2) .card-img {
+        &::before {
+          rotate: 180deg;
+          // background: url("../imgs/card-bg1.svg") center / 100% 100% no-repeat;
+        }
+      }
+
     }
   }
 }
